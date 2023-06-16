@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-image: linear-gradient(#121212, #232323);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    color: #ffffff;
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+}
+
+.logocontainer img {
+    margin-right: 10px;
+}
+
+.logocontainer .logo-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.logocontainer .logo-link {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo-desc {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.home {
+    background-image: url("https://img.freepik.com/free-vector/blurred-abstract-background-design_1107-169.jpg?t=st=1686206730~exp=1686207330~hmac=7854fbfa1175d5d0e8faac77824a2dc9406d130390c220de10c5f9af70157e7d");
+    background-size: cover;
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 34px;
+}
+
+.section-left .information {
+    max-width: 500px;
+    text-align: center;
+}
+
+.title {
+    color: #fafafa;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #dadada;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.button-download {
+    background-color: #2a76cc;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.button-github {
+    background-color: transparent;
+    border: solid 1px;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.button-download:hover {
+    background-color: #1b5f9e;
+}
+
+.features {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+    color: #ffffff;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.features-column {
+    background-color: #232323;
+    width: 100%;
+    max-width: 300px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 15px 15px;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2a76cc;
+}
+
+.footer .footer-links {
+    margin-bottom: 10px;
+}
+
+.footer .footer-links a:not(:last-child)::after {
+    content: "|";
+    margin: 0 8px;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-right {
+        margin-top: 20px;
+    }
+
+    .home {
+        padding: 40px;
+    }
+
+    .section-left .information {
+        max-width: 100%;
+    }
+
+    .section-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .features-column {
+        width: 250px;
+    }
+}
+
+
